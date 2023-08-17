@@ -1,4 +1,4 @@
-const { Schema, model, default: mongoose } = require("mongoose");
+import mongoose, { Schema, model } from "./mongoose";
 
 const OrderSchema = new Schema(
   {
