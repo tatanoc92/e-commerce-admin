@@ -133,15 +133,17 @@ export default function ProductForm({
           ))}
       </select>
       {propertiesToFill.length > 0 &&
-        propertiesToFill.map((p) => (
-          <div className="gap-1 text-sm">
+        propertiesToFill.map((p, index) => (
+          <div key={index} className="gap-1 text-sm">
             <div>{p.name[0].toUpperCase() + p.name.substring(1)}</div>
             <select
               value={productProperties[p.name]}
               onChange={(ev) => setProductProp(p.name, ev.target.value)}
             >
-              {p.values.map((v) => (
-                <option value={v}>{v}</option>
+              {p.values.map((v, index) => (
+                <option key={index} value={v}>
+                  {v}
+                </option>
               ))}
             </select>
           </div>
