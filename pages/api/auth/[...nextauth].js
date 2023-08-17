@@ -1,4 +1,4 @@
-import { MongoDBAdapter } from "@auth/mongodb-adapter";
+import { MongoDBAdapter } from "/node_modules/@auth/mongodb-adapter";
 import NextAuth, { getServerSession } from "next-auth";
 
 import GoogleProvider from "next-auth/providers/google";

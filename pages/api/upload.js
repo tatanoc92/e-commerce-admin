@@ -1,5 +1,5 @@
-import multiparty from "multiparty";
-import { S3Client, PutObjectCommand } from "@aws-sdk/client-s3";
+import multiparty from "node_modules/multiparty";
+import { S3Client, PutObjectCommand } from "node_modules/@aws-sdk/client-s3";
 import fs from "fs";
 import mime from "mime-types";
 import { mongooseConnect } from "../../lib/mongoose";
